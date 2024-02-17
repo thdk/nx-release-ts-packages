@@ -33,3 +33,11 @@ npx nx g @nx/js:lib my-lib-2 \
  --projectNameAndRootFormat as-provided
 
 ```
+
+## Release
+
+```sh
+npx nx release --skip-publish
+```
+
+Note that this repo is using conventional-commits and `nx release version` currently only bumps versions for `feat:` and `fix:` commits.
