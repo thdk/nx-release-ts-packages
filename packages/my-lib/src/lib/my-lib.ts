@@ -1,5 +1,5 @@
 export function myLib(): string {
-  return 'my-lib';
+  return 'my-lib my-lib';
 }
 
 export function myNewFeature(): string {
