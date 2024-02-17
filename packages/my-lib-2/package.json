@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "dependencies": {
     "tslib": "^2.3.0",
-    "@my-org/my-lib": "0.2.0"
+    "@my-org/my-lib": "0.2.1"
   },
   "type": "commonjs",
   "main": "./src/index.js",
