@@ -14,8 +14,14 @@
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/packages/{projectName}"
+      }
     }
   },
+
   "plugins": [
     {
       "plugin": "@nx/eslint/plugin",
@@ -23,5 +29,24 @@
         "targetName": "lint"
       }
     }
-  ]
+  ],
+  "release": {
+    "projectsRelationship": "independent",
+    "git": {
+      "commit": true,
+      "tag": true
+    },
+    "version": {
+      "generatorOptions": {
+        "specifierSource": "conventional-commits",
+        "currentVersionResolver": "git-tag",
+        "fallbackCurrentVersionResolver": "disk",
+        "projectRoot": "dist/packages/{projectName}"
+      }
+    },
+    "changelog": {
+      "projectChangelogs": true,
+      "automaticFromRef": true
+    }
+  }
 }
