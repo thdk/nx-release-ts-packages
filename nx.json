@@ -41,7 +41,7 @@
         "specifierSource": "conventional-commits",
         "currentVersionResolver": "git-tag",
         "fallbackCurrentVersionResolver": "disk",
-        "projectRoot": "dist/packages/{projectName}"
+        "packageRoot": "dist/packages/{projectName}"
       }
     },
     "changelog": {
